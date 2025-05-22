@@ -1,0 +1,389 @@
+/* Global styles */
+:root {
+    --primary-color: #6b2b90;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.273);
+    --shadow: rgba(0, 0, 0, 0.221);
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;             
+    padding: 0;            
+}
+
+body {
+    position: relative;    
+    min-height: 100vh;     
+    background-color: #000000; 
+    background-image: url("фон.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: var(--text-color); 
+    font-family: Arial, sans-serif;
+    line-height: 1.5;    
+}
+
+/*шапка*/
+.header {
+    background-color: var(--card-bg);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px var(--shadow); 
+}
+
+.header-content {
+    max-width: 1200px;     
+    margin: 0 auto;      
+    display: flex;
+    flex-direction: column;
+}
+
+h1 a {
+    color: var(--text-color);
+    text-shadow: 5px 5px var(--primary-color); 
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.tagline {
+    font-style: italic;
+    margin: 0.5rem 0 1rem; 
+    color: var(--primary-color);
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.5rem;        
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/*основа*/
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+/* Форма добавления */
+.add-point-form {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 0 20px var(--shadow);
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    gap: 30px;
+}
+
+.form-left {
+    flex: 1;
+}
+
+.form-right {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+select.form-control {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+.photo-preview {
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.photo-preview img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Список точек */
+.my-points, .other-points {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+}
+
+.points-container, .points-grid {
+    margin-top: 20px;
+}
+
+.point-item {
+    padding: 20px;
+    background-color:var(--card-bg);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #333;
+    box-shadow: 0 2px 5px var(--shadow);
+    gap: 20px;
+}
+
+.point-info {
+    flex: 2;
+}
+
+.point-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.point-info p {
+    margin: 5px 0;
+}
+
+.description {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px !important;
+}
+
+.point-image {
+    flex: 1;
+    max-width: 200px;
+}
+
+.point-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.point-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Другие точки */
+.other-points {
+    margin-top: 50px;
+}
+
+.points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.other-point-item {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px var(--shadow);
+    color: #333;
+}
+
+.other-point-item .point-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.other-point-item .point-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.other-point-item .point-info {
+    padding: 15px;
+}
+
+.other-point-item h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.other-point-item p {
+    margin: 5px 0;
+}
+
+.btn-view, .btn-edit, .btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-view {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-edit {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-delete {
+    background-color: #ea61c6;
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #5d3d8a;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+/*подвал*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;   
+    justify-content: center;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d1c4e9;     
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;      
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .form-container {
+        flex-direction: column;
+    }
+    
+    .point-item {
+        flex-direction: column;
+    }
+    
+    .point-image {
+        max-width: 100%;
+        order: -1;
+    }
+    
+    .point-actions {
+        flex-direction: row;
+        align-self: flex-end;
+        margin-top: 15px;
+    }
+}

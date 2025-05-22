@@ -1,0 +1,213 @@
+/* Global styles */
+:root {
+    --primary-color: #6b2b90;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.273);
+    --shadow: rgba(0, 0, 0, 0.221);
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;             
+    padding: 0;            
+}
+
+body {
+    position: relative;    
+    min-height: 100vh;     
+    background-color: #000000; 
+    background-image: url("фон.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: var(--text-color); 
+    font-family: Arial, sans-serif;
+    line-height: 1.5;    
+}
+
+/*шапка*/
+.header {
+    background-color: var(--card-bg);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px var(--shadow); 
+}
+
+.header-content {
+    max-width: 1200px;     
+    margin: 0 auto;      
+    display: flex;
+    flex-direction: column;
+}
+
+h1 a {
+    color: var(--text-color);
+    text-shadow: 5px 5px var(--primary-color); 
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.tagline {
+    font-style: italic;
+    margin: 0.5rem 0 1rem; 
+    color: var(--primary-color);
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.5rem;        
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/*Основа*/
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 0 20px var(--shadow);
+    color: #333;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.login-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/*подвал*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;   
+    justify-content: center;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d1c4e9;     
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;      
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .login-container {
+        padding: 1.5rem;
+    }
+    
+    .login-btn {
+        max-width: 100%;
+    }
+}
