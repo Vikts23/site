@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point on the map</title>
+    <link rel="stylesheet" href="src/css/style_index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1><a href="index.html" class="logo">Point on the map</a></h1>
+            <p class="tagline">The whole world is in our hands</p>
+            <nav class="main-nav">
+                <a href="events.html">Мероприятия</a>
+                <a href="useful.html">Полезное</a>
+                <a href="add-point.html">Добавить точку</a>
+                <a href="register.html">Регистрация</a>
+                <a href="login.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <p style="color: white;">Это платформа для путешественников,
+                где они могут делиться своими
+                впечатлениями и опытом,
+                обсуждать интересные места
+                и открывать для себя что-то новое.
+                
+                Если вы хотите рассказать нам
+                о своих приключениях
+                и найти единомышленников,
+                присоединяйтесь к нам!
+            </p>
+        </section>
+        
+        <section class="content-section">
+            <h2>Это может быть интересно</h2>
+            <div class="articles">
+                <article class="article-card" data-link="https://example.com/article1">
+                    <img class = "img" src="src/img/рико.jpg"/>
+                    <h3>Отправляюсь на поиски следов древней Гипербореи к подножью г.Кюме</h3>
+                    <p class="read-more">Читать далее →</p>
+                </article>
+                <article class="article-card" data-link="https://example.com/article2">
+                    <img class = "img" src="src/img/уфтюга.jpg"/>
+                    <h3>Документальный фильм "Север помнит" сняли местные жители д.Верхняя Уфтюга</h3>
+                    <p class="read-more">Читать далее →</p>
+                </article>
+                <article class="article-card" data-link="https://example.com/article3">
+                    <img class = "img" src="src/img/Сакура.jpg"/>
+                    <h3>Санкт-Петербург. На майские празники в саду дружбы зацветет сакура</h3>
+                    <p class="read-more">Читать далее →</p>
+                </article>
+                <article class="article-card" data-link="https://example.com/article4">
+                    <img class = "img" src="src/img/парк.jpg"/>
+                    <h3>Санкт-Петербург. Краски тёплого мая в Екатерининском парке</h3>
+                    <p class="read-more">Читать далее →</p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <div class="gallery-item" data-link="gallery.html#walls">
+                    <img src="src/img/Страны.jpg" alt="Страны">
+                    <p>Страны</p>
+                </div>
+                <div class="gallery-item" data-link="gallery.html#gases">
+                    <img src="src/img/Времена года.jpg" alt="Времена года">
+                    <p>Времена года</p>
+                </div>
+                <div class="gallery-item" data-link="gallery.html#rook">
+                    <img src="src/img/горы.jpg" alt="Горы">
+                    <p>Горы</p>
+                </div>
+                <div class="gallery-item" data-link="gallery.html#vines">
+                    <img src="src/img/люди.jpg" alt="Люди">
+                    <p>Люди</p>
+                </div>
+                <div class="gallery-item" data-link="gallery.html#walls">
+                    <img src="src/img/блюда.jpeg" alt="Блюда">
+                    <p>Блюда</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Ваши вопросы</h2>
+            <form id="question-form">
+                <input type="email" id="email" placeholder="Почта" required>
+                <textarea id="question" placeholder="Ваш вопрос" required></textarea>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="partners.html">Partner</a>
+                <a href="f9.html">FQ</a>
+                <a href="language.html">Language</a>
+                <a href="dev.html">For developer</a>
+                <a href="help.html">Help</a>
+            </div>
+            <p class="copyright">© 2025 Point on the mup.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/script_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point on the map</title>
+    <link rel="stylesheet" href="src/css/register.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1><a href="index.html" class="logo">Point on the map</a></h1>
+            <p class="tagline">The whole world is in our hands</p>
+            <nav class="main-nav">
+                <a href="events.html">Мероприятия</a>
+                <a href="useful.html">Полезное</a>
+                <a href="add-point.html">Добавить точку</a>
+                <a href="register.html">Регистрация</a>
+                <a href="login.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="register-container">
+            <h2 class="register-title">Регистрация</h2>
+            
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">Почта</label>
+                    <input type="email" id="email" class="form-input" placeholder="Введите ваш email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" id="name" class="form-input" placeholder="Введите ваше имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" id="password" class="form-input" placeholder="Придумайте пароль">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password" class="form-label">Подтверждение пароля</label>
+                    <input type="password" id="confirm-password" class="form-input" placeholder="Повторите пароль">
+                </div>
+                
+                <div class="form-group gender-group">
+                    <span class="gender-label">Пол</span>
+                    <div class="gender-options">
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="female" class="gender-input"> 
+                            <span class="gender-text">Ж</span>
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="male" class="gender-input"> 
+                            <span class="gender-text">М</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="terms">
+                    <input type="checkbox" id="terms" class="terms-checkbox">
+                    <label for="terms" class="terms-text">Я согласен с условиями использования</label>
+                </div>
+                
+                <button type="submit" class="register-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Partners</a>
+                <a href="#" class="footer-link">FQ</a>
+                <a href="#" class="footer-link">Language</a>
+                <a href="#" class="footer-link">For developers</a>
+                <a href="#" class="footer-link">Help</a>
+            </div>
+            <p class="copyright">© 2025 Points on the map</p>
+        </div>
+    </footer>
+
+    <script src="src/js/script_reg.js"></script>
+
+</body>
+</html>

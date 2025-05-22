@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point on the map</title>
+    <link rel="stylesheet" href="src/css/style_addpoint.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1><a href="index.html" class="logo">Point on the map</a></h1>
+            <p class="tagline">The whole world is in our hands</p>
+            <nav class="main-nav">
+                <a href="events.html">Мероприятия</a>
+                <a href="useful.html">Полезное</a>
+                <a href="add-point.html">Добавить точку</a>
+                <a href="register.html">Регистрация</a>
+                <a href="login.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <h2>Добавьте точку на карту</h2>
+        
+        <form class="add-point-form">
+            <div class="form-container">
+                <div class="form-left">
+                    <div class="form-group">
+                        <label for="country">Выберите страну</label>
+                        <select id="country" class="form-control">
+                            <option value="">-- Выберите страну --</option>
+                            <option value="ru">Россия</option>
+                            <option value="us">США</option>
+                            <option value="fr">Франция</option>
+                            <option value="it">Италия</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="region">Регион</label>
+                        <input type="text" id="region" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">Населенный пункт</label>
+                        <input type="text" id="city" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="price">Цена</label>
+                        <input type="text" id="price" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Категория</label>
+                        <select id="category" class="form-control">
+                            <option value="">-- Выберите категорию --</option>
+                            <option value="waterfall">Водопад</option>
+                            <option value="museum">Музей</option>
+                            <option value="eco-trail">Эко-тропа</option>
+                            <option value="lake">Озеро</option>
+                            <option value="river">Река</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-right">
+                    <div class="form-group">
+                        <label for="description">Описание</label>
+                        <textarea id="description" class="form-control" rows="8"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="photo">Фотография</label>
+                        <input type="file" id="photo" class="form-control" accept="image/*">
+                        <div class="photo-preview" id="photoPreview"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" class="btn-primary" id="addPointBtn">Добавить точку</button>
+        </form>
+        
+        <div class="my-points">
+            <h2>Ваши точки</h2>
+            <div id="pointsList" class="points-container">
+                <div class="point-item">
+                    <div class="point-info">
+                        <h3>Водопад "Радужный"</h3>
+                        <p>Россия, Краснодарский край, Сочи</p>
+                        <p>Категория: Водопад</p>
+                        <p>Цена: Бесплатно</p>
+                        <p class="description">Живописный водопад в горной местности с чистой водой и красивыми видами.</p>
+                    </div>
+                    <div class="point-image">
+                        <img src="" alt="Водопад Радужный">
+                    </div>
+                    <div class="point-actions">
+                        <button class="btn-edit">Редактировать</button>
+                        <button class="btn-delete">Удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="other-points">
+            <h2>Другие точки</h2>
+            <div class="points-grid">
+                <div class="other-point-item">
+                    <div class="point-image">
+                        <img src="" alt="Озеро Голубое">
+                    </div>
+                    <div class="point-info">
+                        <h3>Озеро Голубое</h3>
+                        <p>Россия, Карелия</p>
+                        <p>Категория: Озеро</p>
+                        <button class="btn-view">Подробнее</button>
+                    </div>
+                </div>
+                <div class="other-point-item">
+                    <div class="point-image">
+                        <img src="" alt="Эко-тропа">
+                    </div>
+                    <div class="point-info">
+                        <h3>Эко-тропа "Лесная"</h3>
+                        <p>Россия, Подмосковье</p>
+                        <p>Категория: Эко-тропа</p>
+                        <button class="btn-view">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="partners.html">Partner</a>
+                <a href="f9.html">FQ</a>
+                <a href="language.html">Language</a>
+                <a href="dev.html">For developer</a>
+                <a href="help.html">Help</a>
+            </div>
+            <p class="copyright">© 2025 Point on the map.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/script_addpoint.js"></script>
+</body>
+</html>
